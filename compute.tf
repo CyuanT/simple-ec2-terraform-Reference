@@ -1,3 +1,4 @@
+# This code block allows us to create an ec2 instance with hardcoded values
 resource "aws_instance" "sample_ec2_hardcoded" {
   ami           = "ami-0b72821e2f351e396"
   instance_type = "t2.micro"
@@ -11,6 +12,9 @@ resource "aws_instance" "sample_ec2_hardcoded" {
   }
 }
 
+# This code block allows us to create an ec2 instance with the use of variables
+# To overwrite any one particular variable, we can pass the variable at runtime during terraform apply step
+# e.g. terraform apply --var ec2_name="my-webserver"
 resource "aws_instance" "sample_ec2_variables" {
   ami           = var.ami_id
   instance_type = var.instance_type

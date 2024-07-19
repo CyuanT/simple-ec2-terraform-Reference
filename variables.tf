@@ -7,7 +7,7 @@ variable "ami_id" {
 variable "ec2_name" {
   description = "Name of EC2"
   type        = string
-  default     = "my-sample-ec2-luqman-from-tf"
+  default     = "my-sample-ec2-luqman-from-tf" # Change accordingly
 }
 
 variable "instance_type" {
@@ -19,23 +19,23 @@ variable "instance_type" {
 variable "key_name" {
   description = "Name of EC2 Key Pair"
   type        = string
-  default     = "luqman-useast1-13072024"
+  default     = "luqman-useast1-13072024" # Change accordingly
 }
 
 variable "sg_name" {
   description = "Name of EC2 security group"
   type        = string
-  default     = "luqman-ec2-allow-ssh-http-https"
+  default     = "luqman-ec2-allow-ssh-http-https" # Change accordingly
 }
 
 variable "vpc_name" {
   description = "Name of VPC to use"
   type        = string
-  default     = "luqman-vpc"
+  default     = "luqman-vpc" # Change accordingly
 }
 
 variable "subnet_name" {
   description = "Name of subnet to use"
   type        = string
-  default     = "luqman-subnet-public1-us-east-1a"
+  default     = "luqman-subnet-public1-us-east-1a" # Change accordingly
 }
